@@ -1,4 +1,4 @@
-CREATE TABLE user (
+CREATE TABLE app_user (
   user_id BIGINT AUTO_INCREMENT PRIMARY KEY,
   username VARCHAR(128) NOT NULL UNIQUE,
   password VARCHAR(256) NOT NULL,
@@ -14,7 +14,7 @@ CREATE TABLE auth_user_group (
   auth_user_group_id BIGINT AUTO_INCREMENT PRIMARY KEY,
   username VARCHAR(128) NOT NULL,
   auth_group VARCHAR(128) NOT NULL,
-  CONSTRAINT user_auth_user_group_fk FOREIGN KEY(username) REFERENCES user(username),
+  CONSTRAINT user_auth_user_group_fk FOREIGN KEY(username) REFERENCES app_user(username),
   UNIQUE (username, auth_group)
 );
 
@@ -45,6 +45,6 @@ CREATE TABLE matricula (
     user_id BIGINT NOT NULL,
     curso_id BIGINT NOT NULL,
     fecha DATE NOT NULL,
-    CONSTRAINT matricula_user_fk FOREIGN KEY(user_id) REFERENCES user(user_id),
+    CONSTRAINT matricula_user_fk FOREIGN KEY(user_id) REFERENCES app_user(user_id),
     CONSTRAINT matricula_curso_fk FOREIGN KEY(curso_id) REFERENCES curso(curso_id)
 );
