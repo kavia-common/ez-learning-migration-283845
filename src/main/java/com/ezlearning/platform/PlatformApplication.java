@@ -35,6 +35,7 @@ public class PlatformApplication {
         SpringApplication app = new SpringApplication(PlatformApplication.class);
         app.setAddCommandLineProperties(false);
         app.setDefaultProperties(defaults);
-        app.run();
+        // Run with args for standard Boot behavior; CLI property injection remains disabled via setAddCommandLineProperties(false).
+        app.run(args);
     }
 }
