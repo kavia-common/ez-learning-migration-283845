@@ -8,15 +8,15 @@ import jakarta.persistence.*;
 @NoArgsConstructor
 @Data
 @Entity
-@Table(name = "AUTH_USER_GROUP")
+@Table(name = "auth_user_group")
 public class AuthGroup {
     @Id
-    @Column(name = "AUTH_USER_GROUP_ID")
+    @Column(name = "auth_user_group_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @Column(name = "USERNAME")
+    @Column(name = "username")
     private String username;
-    @Column(name = "AUTH_GROUP")
+    @Column(name = "auth_group")
     private String authgroup;
 
     public AuthGroup(String username, String authgroup) {
