@@ -23,7 +23,10 @@ public class PlatformApplication {
         */
         Map<String, Object> defaults = new HashMap<>();
         String envAddress = System.getenv("SERVER_ADDRESS");
-        String envPort = System.getenv("SERVER_PORT");
+        String envPort = System.getenv("PORT");
+        if (envPort == null || envPort.isBlank()) {
+            envPort = System.getenv("SERVER_PORT");
+        }
 
         defaults.put("server.address", (envAddress == null || envAddress.isBlank()) ? "0.0.0.0" : envAddress);
         defaults.put("server.port", (envPort == null || envPort.isBlank()) ? "3001" : envPort);

@@ -113,6 +113,13 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <!-- Ensure that even if external tooling tries to pass CLI flags, the application ignores CLI property injection. -->
+                    <addResources>true</addResources>
+                    <arguments>
+                        <argument>--spring.main.add-command-line-properties=false</argument>
+                    </arguments>
+                </configuration>
             </plugin>
 
             <!-- Ensure Java 22 release bytecode -->
