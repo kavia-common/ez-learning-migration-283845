@@ -7,7 +7,7 @@ import com.ezlearning.platform.auth.UserRepository;
 import com.ezlearning.platform.dto.UserDto;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -19,6 +19,7 @@ public class UserService {
 
     private final UserRepository userRepository;
     private final AuthGroupRepository authGroupRepository;
+    private final PasswordEncoder passwordEncoder;
 
     public void createUser(UserDto userDto) throws IllegalStateException {
 
@@ -28,7 +29,7 @@ public class UserService {
             throw new IllegalStateException("Ya existe un usuario con el email " + userDto.getEmail());
         }
         String username = userDto.getUsername();
-        String password = new BCryptPasswordEncoder(11).encode(userDto.getPassword());
+        String password = passwordEncoder.encode(userDto.getPassword());
         String nombre = userDto.getNombre();
         String apellido = userDto.getApellido();
         String email = userDto.getEmail();

@@ -40,6 +40,12 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!-- Jakarta Bean Validation (Hibernate Validator) starter for Boot 3 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+
         <!-- Devtools (runtime only) -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
