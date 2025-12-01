@@ -908,3 +908,207 @@
 2025-12-01 04:02:10,120 - Knowledge - INFO - ⚡ Total Redis path: 3.48s (vs ~300s from disk)
 2025-12-01 04:02:10,336 - Knowledge - INFO - Saving knowledge to Redis...
 2025-12-01 04:02:10,599 - Knowledge - INFO - Knowledge saved to Redis successfully
+2025-12-01 04:22:53,773 - Knowledge - INFO - Created shared MongoDB connection pool
+2025-12-01 04:22:54,076 - Knowledge - INFO - Starting Knowledge Graph processing with 20 threads
+2025-12-01 04:22:54,312 - Knowledge - INFO - Initial configuration: chunk_size=65536, max_cache_size=500
+2025-12-01 04:22:54,526 - Knowledge - INFO - Knowledge Graph concurrency configuration: workers=20, max_batch_size=25, max_concurrent_llm_calls=50
+2025-12-01 04:22:55,631 - Knowledge - INFO - 🔍 _load_persisted_knowledge called - checking for Redis optimization
+2025-12-01 04:22:55,828 - Knowledge - WARNING - ❌ load_from_redis method not found - Redis support not attached
+2025-12-01 04:22:56,011 - Knowledge - INFO - load persisted knowledge: begin
+2025-12-01 04:22:56,724 - Knowledge - INFO - Persisted knowledge files in /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/.knowledge have been renamed to use .json
+2025-12-01 04:22:56,907 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:22:57,110 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:22:57,293 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/resources/templates/cursos/curso-detail.html
+2025-12-01 04:22:57,475 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:22:57,680 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:22:57,843 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/resources/templates/logout.html
+2025-12-01 04:22:58,016 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:22:58,236 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:22:58,448 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/resources/db/migration/V1.2__data.sql
+2025-12-01 04:22:58,611 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:22:58,768 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:22:58,949 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/resources/templates/error.html
+2025-12-01 04:22:59,144 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:22:59,342 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:22:59,555 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/resources/templates/profesores/profesor-edit.html
+2025-12-01 04:22:59,767 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:22:59,976 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:00,180 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/java/com/ezlearning/platform/model/Curso.java
+2025-12-01 04:23:00,356 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:00,539 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:00,773 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/java/com/ezlearning/platform/dto/UserDto.java
+2025-12-01 04:23:00,979 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:01,196 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:01,382 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/java/com/ezlearning/platform/services/core/impl/UserService.java
+2025-12-01 04:23:01,533 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:01,751 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:01,932 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/resources/templates/registered.html
+2025-12-01 04:23:02,140 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:02,326 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:02,556 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/java/com/ezlearning/platform/auth/UserRepository.java
+2025-12-01 04:23:02,741 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:02,936 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:03,109 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/java/com/ezlearning/platform/auth/AuthGroup.java
+2025-12-01 04:23:03,282 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:03,486 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:03,716 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/java/com/ezlearning/platform/model/Profesor.java
+2025-12-01 04:23:03,893 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:04,047 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:04,238 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/resources/static/css/style.css
+2025-12-01 04:23:04,440 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:04,654 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:04,850 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/java/com/ezlearning/platform/auth/AuthGroupRepository.java
+2025-12-01 04:23:05,079 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:05,254 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:05,410 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/java/com/ezlearning/platform/auth/User.java
+2025-12-01 04:23:05,625 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:05,831 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:06,027 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/java/com/ezlearning/platform/controller/UserController.java
+2025-12-01 04:23:06,239 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:06,415 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:06,639 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/java/com/ezlearning/platform/auth/EzLearningUserDetailsService.java
+2025-12-01 04:23:06,777 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:06,935 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:07,157 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/resources/static/css/materialize.css
+2025-12-01 04:23:07,354 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:07,508 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:07,735 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/resources/static/js/materialize.js
+2025-12-01 04:23:07,948 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:08,140 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:08,380 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/resources/db/migration/V1.1__schema.sql
+2025-12-01 04:23:08,615 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:08,799 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:08,936 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/resources/templates/cursos/curso-add.html
+2025-12-01 04:23:09,150 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:09,327 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:09,506 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/resources/templates/user/user-edit.html
+2025-12-01 04:23:09,697 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:09,928 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:10,101 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/resources/templates/matricula-success.html
+2025-12-01 04:23:10,294 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:10,504 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:10,667 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/java/com/ezlearning/platform/model/Matricula.java
+2025-12-01 04:23:10,870 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:11,080 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:11,302 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/java/com/ezlearning/platform/auth/UserPrincipal.java
+2025-12-01 04:23:11,458 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:11,616 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:11,849 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/resources/templates/fragments/head.html
+2025-12-01 04:23:12,040 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:12,254 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:12,444 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/resources/templates/index.html
+2025-12-01 04:23:12,648 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:12,816 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:12,982 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/java/com/ezlearning/platform/services/core/impl/ProfesorService.java
+2025-12-01 04:23:13,213 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:13,372 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:13,557 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/java/com/ezlearning/platform/PlatformApplication.java
+2025-12-01 04:23:13,752 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:13,929 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:14,098 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/java/com/ezlearning/platform/services/core/impl/CursoService.java
+2025-12-01 04:23:14,268 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:14,442 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:14,675 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/java/com/ezlearning/platform/controller/MatriculaController.java
+2025-12-01 04:23:14,902 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:15,069 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:15,289 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/java/com/ezlearning/platform/services/core/GenericService.java
+2025-12-01 04:23:15,507 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:15,727 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:15,936 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/resources/templates/discover.html
+2025-12-01 04:23:16,120 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:16,321 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:16,487 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/resources/templates/profesores/profesores.html
+2025-12-01 04:23:16,661 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:16,890 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:17,053 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/java/com/ezlearning/platform/dto/CursoDto.java
+2025-12-01 04:23:17,233 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:17,426 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:17,592 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/java/com/ezlearning/platform/repositories/MatriculaRepository.java
+2025-12-01 04:23:17,782 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:17,994 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:18,178 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/resources/templates/user/profile.html
+2025-12-01 04:23:18,398 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:18,600 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:18,783 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/resources/templates/fragments/header.html
+2025-12-01 04:23:18,995 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:19,216 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:19,396 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/README.md
+2025-12-01 04:23:19,585 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:19,792 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:19,974 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/java/com/ezlearning/platform/controller/APIController.java
+2025-12-01 04:23:20,177 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:20,392 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:20,621 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/resources/templates/profesores/profesor-detail.html
+2025-12-01 04:23:20,790 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:20,993 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:21,191 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/test/java/com/ezlearning/platform/PlatformApplicationTests.java
+2025-12-01 04:23:21,361 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:21,560 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:21,706 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/java/com/ezlearning/platform/repositories/ProfesorRepository.java
+2025-12-01 04:23:21,905 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:22,120 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:22,334 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/resources/templates/cursos/curso-edit.html
+2025-12-01 04:23:22,527 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:22,691 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:22,894 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/java/com/ezlearning/platform/controller/ProfesorController.java
+2025-12-01 04:23:23,113 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:23,304 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:23,485 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/resources/templates/cursos/cursos.html
+2025-12-01 04:23:23,686 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:23,870 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:24,048 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/resources/templates/profesores/profesor-add.html
+2025-12-01 04:23:24,212 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:24,416 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:24,611 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/java/com/ezlearning/platform/dto/ProfesotDto.java
+2025-12-01 04:23:24,808 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:24,979 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:25,177 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/java/com/ezlearning/platform/controller/IndexController.java
+2025-12-01 04:23:25,373 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:25,560 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:25,743 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/java/com/ezlearning/platform/dto/MatriculaDto.java
+2025-12-01 04:23:25,947 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:26,124 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:26,310 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/java/com/ezlearning/platform/controller/SecurityController.java
+2025-12-01 04:23:26,549 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:26,722 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:26,911 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/resources/templates/register.html
+2025-12-01 04:23:27,089 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:27,270 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:27,442 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/java/com/ezlearning/platform/services/core/impl/MatriculaService.java
+2025-12-01 04:23:27,599 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:27,778 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:27,960 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/resources/templates/fragments/footer.html
+2025-12-01 04:23:28,179 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:28,400 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:28,599 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/pom.xml
+2025-12-01 04:23:28,761 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:28,957 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:29,160 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/resources/static/js/init.js
+2025-12-01 04:23:29,323 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:29,513 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:29,684 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/java/com/ezlearning/platform/security/ApplicationSecurityConfiguration.java
+2025-12-01 04:23:29,906 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:30,081 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:30,264 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/java/com/ezlearning/platform/controller/CursoController.java
+2025-12-01 04:23:30,452 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:30,645 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:30,830 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/resources/templates/login.html
+2025-12-01 04:23:31,017 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/ez-learning-migration-283845.git:kavia-master
+2025-12-01 04:23:31,221 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7ff5165b0f10>
+2025-12-01 04:23:31,426 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/283845/b5607jy/ez-learning-migration-283845/src/main/java/com/ezlearning/platform/repositories/CursoRepository.java
+2025-12-01 04:23:31,647 - Knowledge - INFO - Loaded 60 files from persisted knowledge
+2025-12-01 04:23:31,801 - Knowledge - INFO - load persisted knowledge: end
+2025-12-01 04:23:32,002 - Knowledge - INFO - Redis support added with prefix knowledge:b5607jy:
+2025-12-01 04:23:32,297 - Knowledge - INFO - Starting knowledge initialization for ID: xw2Bhd-b5607jy
+2025-12-01 04:23:32,446 - Knowledge - INFO - 🔍 Checking Redis for build_id: b5607jy
+2025-12-01 04:23:32,598 - Knowledge - INFO - 🔍 Full session ID: xw2Bhd-b5607jy
+2025-12-01 04:23:32,805 - Knowledge - INFO - 🔍 Redis prefix will be: knowledge:b5607jy:
+2025-12-01 04:23:32,997 - Knowledge - INFO - 🔍 Using attached load_from_redis() method
+2025-12-01 04:23:33,206 - Knowledge - INFO - 🔍 Attempting to load knowledge from Redis...
+2025-12-01 04:23:33,387 - Knowledge - INFO - 🔍 Using derived instance_id for Redis lookup: b5607jy
+2025-12-01 04:23:35,955 - Knowledge - INFO - ✅ Redis cache found! Loading knowledge...
+2025-12-01 04:23:36,130 - Knowledge - INFO - ✅ Successfully loaded from Redis: 60 files
+2025-12-01 04:23:36,330 - Knowledge - INFO - ✅ Redis load complete: 60 files in 3.33s
+2025-12-01 04:23:36,515 - Knowledge - INFO - ⚡ Total Redis path: 3.33s (vs ~300s from disk)
+2025-12-01 04:23:36,694 - Knowledge - INFO - Saving knowledge to Redis...
+2025-12-01 04:23:36,869 - Knowledge - INFO - Knowledge saved to Redis successfully
