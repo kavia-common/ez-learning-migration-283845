@@ -279,6 +279,29 @@ fi
 
 WRAPPER_LAUNCHER=org.apache.maven.wrapper.MavenWrapperMain
 
+# Filter unsupported CLI options that may be passed by external preview tooling (e.g., "--server.address=...")
+# We ignore any option that starts with "--server." in both "--key=value" and "--key value" forms.
+if [ "$#" -gt 0 ]; then
+  filtered_args=""
+  while [ "$#" -gt 0 ]; do
+    case "$1" in
+      --server.*)
+        # If the arg is in "--key=value" form, skip just this arg; otherwise skip this and the next token as its value.
+        case "$1" in
+          *=*) shift ;;
+          *) shift; [ "$#" -gt 0 ] && shift ;;
+        esac
+        ;;
+      *)
+        filtered_args="$filtered_args \"$1\""
+        shift
+        ;;
+    esac
+  done
+  # Reset positional params to the filtered list (quoting handled via eval).
+  eval "set -- $filtered_args"
+fi
+
 exec "$JAVACMD" \
   $MAVEN_OPTS \
   -classpath "$MAVEN_PROJECTBASEDIR/.mvn/wrapper/maven-wrapper.jar" \

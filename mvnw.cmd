@@ -137,9 +137,41 @@ if exist %WRAPPER_JAR% (
 )
 @REM End of extension
 
-%MAVEN_JAVA_EXE% %JVM_CONFIG_MAVEN_PROPS% %MAVEN_OPTS% %MAVEN_DEBUG_OPTS% -classpath %WRAPPER_JAR% "-Dmaven.multiModuleProjectDirectory=%MAVEN_PROJECTBASEDIR%" %WRAPPER_LAUNCHER% %MAVEN_CONFIG% %*
+@REM Filter unsupported CLI options that may be passed by external preview tooling (e.g., "--server.address=...")
+@REM We ignore any option that starts with "--server." in both "--key=value" and "--key value" forms.
+set MVNW_ARGS_FILTERED=
+:parseArgs
+if "%~1"=="" goto endParseArgs
+set "ARG=%~1"
+call :startsWithServer "%ARG%" IS_SERVER
+if "%IS_SERVER%"=="1" (
+  @REM If the arg contains '=', skip this arg only; else skip this and the next token as its value.
+  echo %ARG% | findstr "=" >nul
+  if errorlevel 1 (
+    shift
+    if "%~1"=="" goto parseArgs
+    shift
+  ) else (
+    shift
+  )
+) else (
+  if defined MVNW_ARGS_FILTERED (set MVNW_ARGS_FILTERED=%MVNW_ARGS_FILTERED% "%~1") else (set MVNW_ARGS_FILTERED="%~1")
+  shift
+)
+goto parseArgs
+:endParseArgs
+
+%MAVEN_JAVA_EXE% %JVM_CONFIG_MAVEN_PROPS% %MAVEN_OPTS% %MAVEN_DEBUG_OPTS% -classpath %WRAPPER_JAR% "-Dmaven.multiModuleProjectDirectory=%MAVEN_PROJECTBASEDIR%" %WRAPPER_LAUNCHER% %MAVEN_CONFIG% %MVNW_ARGS_FILTERED%
 if ERRORLEVEL 1 goto error
 goto end
+
+:startsWithServer
+setlocal EnableDelayedExpansion
+set "ARG=%~1"
+set "RES=0"
+if "!ARG:~0,9!"=="--server." set "RES=1"
+endlocal & set "%~2=%RES%"
+goto :eof
 
 :error
 set ERROR_CODE=1
