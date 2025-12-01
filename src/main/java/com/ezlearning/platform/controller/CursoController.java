@@ -44,7 +44,7 @@ public class CursoController{
     }
 
     @GetMapping("/add/{id_profesor}")
-    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @PreAuthorize("hasRole('ADMIN')")
     public String addCurso(@PathVariable Long id_profesor, Model model) {
         try {
             Profesor current = profesorRepository.findById(id_profesor).get();
@@ -130,7 +130,7 @@ public class CursoController{
     }
 
     @GetMapping("/{id_curso}")
-    @PreAuthorize("hasRole('ROLE_USER')")
+    @PreAuthorize("hasRole('USER')")
     public String getCursoDetail(@PathVariable Long id_curso, Authentication authentication, Model model) {
         String username = authentication.getName();
         Boolean matriculado = false;

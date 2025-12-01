@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/matricula")
-@PreAuthorize("hasRole('ROLE_USER')")
+@PreAuthorize("hasRole('USER')")
 public class MatriculaController {
 
     private MatriculaService matriculaService;

@@ -24,7 +24,9 @@ public class UserPrincipal implements UserDetails {
         }
         Set<SimpleGrantedAuthority> grantedAuthorities = new HashSet<>();
         authGroups.forEach(group -> {
-            grantedAuthorities.add(new SimpleGrantedAuthority(group.getAuthgroup()));
+            // Normalize to ROLE_ prefixed, UPPERCASE authorities expected by Spring Security
+            String role = "ROLE_" + String.valueOf(group.getAuthgroup()).toUpperCase();
+            grantedAuthorities.add(new SimpleGrantedAuthority(role));
         });
         return grantedAuthorities;
     }

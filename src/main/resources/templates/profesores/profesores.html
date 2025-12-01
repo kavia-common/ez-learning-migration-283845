@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org"
-      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head th:insert="fragments/head">
 </head>
 
@@ -52,7 +52,7 @@
                             <td th:text="${profesor.correoProfesor}"></td>
                             <td th:text="${profesor.descProfesor}"></td>
 
-                            <td sec:authorize="hasRole('ROLE_USER')">
+                            <td sec:authorize="hasRole('USER')">
                                 <div>
                                     <span>
                                     <a class="btn-floating waves-effect waves-light btn-small"
@@ -60,7 +60,7 @@
                                             class="material-icons">chevron_right
                                     </i></a>
                                     </span>
-                                    <span sec:authorize="hasRole('ROLE_ADMIN')">
+                                    <span sec:authorize="hasRole('ADMIN')">
                                     <a th:href="@{/profesores/edit/{id_profesor}
                                     (id_profesor=${profesor.id_profesor})}"
                                        class="btn-floating waves-effect waves-light btn-small yellow darken-1"><i

@@ -35,7 +35,7 @@ public class ProfesorController {
     }
 
     @GetMapping("/add")
-    @PreAuthorize("hasRole('ROLE_USER')")
+    @PreAuthorize("hasRole('USER')")
     public String addProfesor(Model model) {
         model.addAttribute("profesor", new ProfesotDto());
         return "profesores/profesor-add";
@@ -50,7 +50,7 @@ public class ProfesorController {
     }
 
     @GetMapping("/edit/{id_profesor}")
-    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @PreAuthorize("hasRole('ADMIN')")
     public String getProfesorForUpdate(@PathVariable Long id_profesor,
                                        Model model) {
         try {
