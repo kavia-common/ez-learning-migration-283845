@@ -46,13 +46,25 @@ This project has two profiles:
 - dev (H2, default)
 - prod (MySQL)
 
-Activate a profile with:
+Activate a profile with either a Maven run argument or an environment variable:
 
+- Maven goal argument:
 ```bash
 ./mvnw spring-boot:run -Dspring-boot.run.profiles=prod
 ```
 
-This change does not alter profile-specific properties in `application-dev.properties` or `application-prod.properties`.
+- Environment variable (preferred for CI/previews):
+```bash
+APP_PROFILE=prod ./mvnw spring-boot:run
+```
+
+Environment variables respected by the app:
+- APP_PROFILE — selects active profile; defaults to dev
+- SERVER_PORT (or PORT) — server port; defaults to 3001
+- SERVER_ADDRESS — bind address; defaults to 0.0.0.0
+- DB_URL, DB_USERNAME, DB_PASSWORD — required when APP_PROFILE=prod
+
+Note: CLI server.* arguments passed to Maven are ignored by design. Use environment variables for binding. This change does not alter profile-specific properties in `application-dev.properties` or `application-prod.properties`.
 
 ---
 
