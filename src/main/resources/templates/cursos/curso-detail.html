@@ -62,7 +62,7 @@
                                                 class="material-icons">edit</i>
                                         </a>
                             </span>
-                            <span sec:authorize="hasRole('ROLE_ADMIN')">
+                            <span sec:authorize="hasRole('ADMIN')">
                                         <a th:href="@{/cursos/delete/{id_curso}
                                         (id_curso=${curso.id_curso})}"
                                            class="btn-floating waves-effect waves-light btn-small red lighten-1"><i

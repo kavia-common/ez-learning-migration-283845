@@ -59,7 +59,7 @@ public class CursoController{
     }
 
     @PostMapping("/add/{id_profesor}")
-    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @PreAuthorize("hasRole('ADMIN')")
     public String saveCurso(@PathVariable Long id_profesor, CursoDto curso, Model model) {
         try {
             Profesor current = profesorRepository.findById(id_profesor).get();
@@ -75,7 +75,7 @@ public class CursoController{
     }
 
     @GetMapping("/edit/{id_curso}")
-    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @PreAuthorize("hasRole('ADMIN')")
     public String getCursoForUpdate(@PathVariable Long id_curso, Model model) {
         try {
             Curso cursoActual = cursoRepository.findById(id_curso).get();
@@ -89,7 +89,7 @@ public class CursoController{
     }
 
     @PostMapping("/edit/{id_profesor}/{id_curso}")
-    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @PreAuthorize("hasRole('ADMIN')")
     public String updateCurso(@PathVariable Long id_profesor, @PathVariable Long id_curso, Curso curso, Model model, RedirectAttributes attributes) {
 
         try {
@@ -115,7 +115,7 @@ public class CursoController{
     }
 
     @GetMapping("/delete/{id_curso}")
-    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @PreAuthorize("hasRole('ADMIN')")
     public String deleteCurso(@PathVariable Long id_curso, Model model) {
         try {
             Curso cursoActual = cursoRepository.findById(id_curso).get();
