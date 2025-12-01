@@ -32,6 +32,6 @@ public class PlatformApplication {
 
         new SpringApplicationBuilder(PlatformApplication.class)
                 .properties(defaults)
-                .run(args);
+                .run();
     }
 }
