@@ -1,6 +1,6 @@
 # Ez Learning
 
-> e-learning web application made using Java 8, Spring Boot, MySql and Materialize
+> e-learning web application made using Java, Spring Boot, MySql and Materialize
 
 [![GitHub](https://img.shields.io/github/license/donnatto/ez-learning?color=purple)](https://opensource.org/licenses/MIT)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/donnatto/ez-learning?color=red)](https://github.com/donnatto/ez-learning/releases)
@@ -8,16 +8,54 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/donnatto/ez-learning?color=blue&label=size)
 [![GitHub stars](https://img.shields.io/github/stars/donnatto/ez-learning?style=social)](https://github.com/donnatto/ez-learning/stargazers)
 
-[![Ez Learning](https://i.imgur.com/QrXbo6q.jpg)](https://ez-learning.herokuapp.com)
-
 ---
 
 ## Start the Application
 
-To start the application locally with the default profile (dev) run this command at the /ez-learning folder
-```shell
+To start the application locally with the default profile (dev), run:
+
+```bash
 ./mvnw spring-boot:run
 ```
+
+The app will bind to `0.0.0.0` and listen on port `3001` by default. These defaults are configured in `src/main/resources/application.properties` and can be overridden via environment variables:
+
+- SERVER_PORT — default: 3001
+- SERVER_ADDRESS — default: 0.0.0.0
+
+Examples:
+
+```bash
+# Use defaults (port 3001, address 0.0.0.0)
+./mvnw spring-boot:run
+
+# Override port only
+SERVER_PORT=8080 ./mvnw spring-boot:run
+
+# Override both address and port
+SERVER_ADDRESS=127.0.0.1 SERVER_PORT=9090 ./mvnw spring-boot:run
+```
+
+Note: You do not need to pass `--server.port` or `--server.address` as CLI arguments to Maven; the application reads them from environment variables. If a runner insists on CLI args, quote them so Maven passes them to Spring Boot:
+```bash
+./mvnw spring-boot:run -Dspring-boot.run.arguments="--server.port=3001 --server.address=0.0.0.0"
+```
+
+---
+
+## Profiles
+
+This project has two profiles:
+- dev (H2, default)
+- prod (MySQL)
+
+Activate a profile with:
+
+```bash
+./mvnw spring-boot:run -Dspring-boot.run.profiles=prod
+```
+
+This change does not alter profile-specific properties in `application-dev.properties` or `application-prod.properties`.
 
 ---
 
@@ -33,11 +71,11 @@ It's an e-learning platform where you can explore courses, teachers, and registe
 
 Uses [Thymeleaf](https://www.thymeleaf.org/) as the template engine for the Frontend, which was styled using [Materialize](https://materializecss.com/).
 
-The backend is developed in Java 8, using [Spring Boot](https://spring.io/projects/spring-boot) with Spring MVC, Spring JPA and Spring Security dependencies.
+The backend is developed in Java using [Spring Boot](https://spring.io/projects/spring-boot) with Spring MVC, Spring JPA and Spring Security dependencies.
 
-It has 2 application profiles, one for development and one for production. The dev profile uses an in memory [H2 Database](https://www.h2database.com/), while the production one uses [MySql](https://www.mysql.com/). Both of them use Sql versioning with [Flyway](https://flywaydb.org/).
+It has 2 application profiles, one for development and one for production. The dev profile uses an in memory [H2 Database](https://www.h2database.com/), while the production one uses [MySql](https://www.mysql.com/). Both of them use SQL versioning with [Flyway](https://flywaydb.org/).
 
-The web application is hosted in [Heroku](https://www.heroku.com/), while the MySql database is hosted in a [AWS RDS](https://aws.amazon.com/rds/) instance.
+The web application is hosted in [Heroku](https://www.heroku.com/), while the MySql database is hosted in an [AWS RDS](https://aws.amazon.com/rds/) instance.
 
 ---
 
