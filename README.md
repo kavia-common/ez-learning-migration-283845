@@ -36,10 +36,7 @@ SERVER_PORT=8080 ./mvnw spring-boot:run
 SERVER_ADDRESS=127.0.0.1 SERVER_PORT=9090 ./mvnw spring-boot:run
 ```
 
-Note: You do not need to pass `--server.port` or `--server.address` as CLI arguments to Maven; the application reads them from environment variables. If a runner insists on CLI args, quote them so Maven passes them to Spring Boot:
-```bash
-./mvnw spring-boot:run -Dspring-boot.run.arguments="--server.port=3001 --server.address=0.0.0.0"
-```
+Note: Do not pass `--server.*` CLI arguments to Maven. Use environment variables (SERVER_PORT, SERVER_ADDRESS) as shown above; the application reads them directly.
 
 ---
 
