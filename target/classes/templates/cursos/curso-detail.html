@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head th:insert="fragments/head">
 
 </head>
@@ -55,14 +55,14 @@
                         <img th:src="${curso.imgurl}" alt="course image">
                         <span id="detail-card-title" class="card-title"><strong th:text="${curso.nomCurso}">Nombre del
                             Curso</strong>
-                            <span sec:authorize="hasRole('ROLE_ADMIN')">
+                            <span sec:authorize="hasRole('ADMIN')">
                                         <a th:href="@{/cursos/edit/{id_curso}
                                         (id_curso=${curso.id_curso})}"
                                            class="btn-floating waves-effect waves-light btn-small yellow darken-1"><i
                                                 class="material-icons">edit</i>
                                         </a>
                             </span>
-                            <span sec:authorize="hasRole('ROLE_ADMIN')">
+                            <span sec:authorize="hasRole('ADMIN')">
                                         <a th:href="@{/cursos/delete/{id_curso}
                                         (id_curso=${curso.id_curso})}"
                                            class="btn-floating waves-effect waves-light btn-small red lighten-1"><i
